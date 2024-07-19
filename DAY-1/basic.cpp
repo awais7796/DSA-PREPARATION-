@@ -18,16 +18,16 @@ int main()
 
     // Write  a program that takes an input of age and prints if u are an adult or not
     //code is below:-
-    int age;
-    // cin >> age;
-    if (age >= 18)
-    {
-        cout << "You are and adult";
-    }
-    else
-    {
-        cout << " you are an under age person";
-    }
+    // int age;
+    // // cin >> age;
+    // if (age >= 18)
+    // {
+    //     cout << "You are and adult";
+    // }
+    // else
+    // {
+    //     cout << " you are an under age person";
+    // }
 
  /*prob no.2:-
  A School has following rules for grading system;
@@ -40,8 +40,8 @@ int main()
  ask user to enter marks and then prints the corresponding grade.
  */
 // code  is below:-
-
-int marks =122;
+/*
+int marks;
  cin>>marks;
 if (marks<25){
     cout<<"your grade is F";
@@ -53,11 +53,39 @@ if (marks<25){
     cout<<"your grade is C";
 }else if(marks>=60&&marks<=79){
     cout<<"your grade is B";
-}else if (marks>=80&&marks<=100){
+} else if (marks>=80&&marks<=100){
     cout<<"your grade is A";
 }else{
     cout<<"Please enter the marks ranging from 1 to 100 ";
+}*/
+
+/*
+Take the age from the user and then decide accordingly 
+1. if age <18 
+print not eligible for job
+2. if age >=18 and age <=54 
+print eligle for job
+3. if age >=55 and age <=57 
+print eligible for job, but retirement soon 
+4. if age >57 
+print retirement time 
+
+code for probl
+
+
+int age;
+cin>>age;
+if(age <18){
+    cout<<"not eligible for job";
+}else if (age >=18&& age <=54) {
+cout<<"not eligible for job";
 }
+else if (age >=55&& age <=57) {
+cout<<"eligible for job, but retirement soon ";
+}
+else if (age >=57) {
+cout<<"retiremnet time ";
+}*/
 
     return 0;
 }
