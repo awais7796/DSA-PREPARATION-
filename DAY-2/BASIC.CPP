@@ -103,7 +103,6 @@ void print6(int n){
      * * * *
    * * * * * *
 
-*/
 void print7(int n){
  
 //    row
@@ -116,7 +115,7 @@ for(int i=0;i<n;i++){
     }
 // star 
     for(int j=0;j<2*i+1;j++){
-    cout<<"* ";
+    cout<<"*";
     }   
 // space 
     for (int j=0;j<n-i-1;j++)
@@ -126,9 +125,119 @@ for(int i=0;i<n;i++){
 
 cout<<endl;
 }
+}
+*/
 
+/*
+8) ********
+    ******
+     ***
+      *
+      
+
+void print8(int n){
+
+    for(int i=0;i<n;i++){
+
+// space 
+for(int j=0;j<i;j++){
+    cout<<" ";
+}
+
+// star 
+for(int j=0;j<2*n-(2*i+1);j++){
+    cout<<"*";
+}
+
+
+// space 
+for(int j=0;j<i;j++){
+    cout<<" ";
+}
+
+
+cout<<endl;
+}
 
 }
+
+9)           *
+           * * *
+         * * * * *
+           * * *
+             *
+combine P7 and P8
+void print9(int n){
+for(int i=0;i<n;i++){
+// space
+for(int j=0;j<n-i-1;j++){
+    cout<<" ";
+}
+for(int j=0;j<2*i+1;j++){
+    cout<<"*";
+}
+
+for(int j=0;j<n-i-1;j++){
+    cout<<" ";
+}
+
+cout<<endl;
+
+-----------upper triangle-----------
+}
+
+
+for(int i=0;i<n;i++){
+// space
+for(int j=0;j<i;j++){
+    cout<<" ";
+}
+for(int j=0;j<2*n-(2*i+1);j++){
+    cout<<"*";
+}
+
+for(int j=0;j<i;j++){
+    cout<<" ";
+}
+
+cout<<endl;
+
+}
+
+}
+10)*
+   * *
+   * * *
+   * * * *
+   * * *
+   * *
+   * 
+void print19(int n){
+-> this approach is by combining the P2 And P5
+
+
+for(int i=0;i<n;i++){
+ for(int j=0;j<i;j++){
+     cout<<"*";
+ }
+
+cout<<endl;
+}
+for(int i=1;i<=n;i++){
+ for(int j=0;j<n-i+1;j++){
+     cout<<"*";
+ }
+
+cout<<endl;
+}}
+
+*/
+
+
+
+
+
+
 
 
 
@@ -141,5 +250,9 @@ int n=5;
 // print4(n);
 // print5(n);
 // print6(n);
-print7(n);
+// print7(n);
+// print8(n);
+// print9(n);
+
+
 }
