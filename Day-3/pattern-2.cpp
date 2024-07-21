@@ -89,7 +89,7 @@ void print14(int n){
 
 for (int i=0; i<n;i++){
 
-    for (char ch='A';ch<'A'+i;ch++){
+    for (char ch='A';ch<='A'+i;ch++){
     cout <<ch<<"";
 }
 cout<<endl;
@@ -97,8 +97,27 @@ cout<<endl;
 
 }}
 
+/*
+15)  A B C D E 
+     A B C D
+     A B C 
+     A B 
+     A  
+
+*/
+void print15(int n){
+
+for (int i=0;i<n;i++){
+ for (char ch='A';ch<='A'+(n-i-1);ch++){
+    cout<<ch;
+ }
+ cout<<endl;
+}
 
 
+
+
+}
 
 
 int main(){
@@ -107,12 +126,13 @@ int main(){
     // for(int i=0;i<t;i++){
 
     // }
-    int n=5;
+    int n=3;
     // cin>>n;
     // print11(n);
     // print12(n);
     // print13(n);
     print14(n);
+    // print15(n);
 
     return 0;
 }
