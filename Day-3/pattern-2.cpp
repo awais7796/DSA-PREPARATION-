@@ -118,21 +118,92 @@ for (int i=0;i<n;i++){
 
 
 }
+/*
+16) A
+    B B
+    C C C
+    D D D D
+
+*/
+void print16(int n){
+ for (int i=0;i<n;i++){
+char ch='A'+i;
+    for (int j=0;j<=i;j++){
+        cout<<ch<<" ";
+    }
+    cout<<endl;
+ }
+
+
+
+
+
+}
+/*
+17)       A
+        A B A 
+      A B C B A 
+    A B C D C B A 
+*/
+void print17(int n){
+        for(int i=0;i<n;i++){
+        for(int j=0; j<n-i-1; j++){
+            cout<<" ";
+        }
+
+// FOR PRINT CHARACTERS 
+        char ch='A';
+        int breakPoint=(2*i+1)/2;
+        for(int j=1;j<=2*i+1;j++){
+            cout<<ch<<" "; //dont forget to put sapace if u are solving on  any plateform like Coding Ninja ,GFG, LC .
+            if(j<=breakPoint) ch++;
+            else ch--;
+        }
+
+        for(int j=0; j<n-i-1; j++){
+          cout<<" ";
+        }
+    cout<<endl;
+
+    }
+}
+
+/*
+18)  E
+     D E
+     C D E 
+     B C D E
+     A B C D E
+*/
+void print18(int n){
+    for (int i=0 ; i<n ;i++){
+    for (char ch='E'- i; ch<='E'; ch++)
+{
+    cout<<ch<<" ";
+}
+cout<<endl;
+    }
+}
+
+
+
 
 
 int main(){
-    // int t;
-    // cin>>t;
-    // for(int i=0;i<t;i++){
+    int t;
+    cin>>t;
+    for(int i=0;i<t;i++){
 
-    // }
     int n=3;
-    // cin>>n;
-    // print11(n);
-    // print12(n);
-    // print13(n);
+    cin>>n;
+    print11(n);
+    print12(n);
+    print13(n);
     print14(n);
-    // print15(n);
+    print15(n);
+    print16(n);
+    print18(n);
+    }
 
     return 0;
 }
