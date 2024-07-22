@@ -185,25 +185,82 @@ cout<<endl;
     }
 }
 
+/*
+19) ***********
+    ****   ****
+    ***     ***
+    **       ** 
+    *         *
+    **       **
+    ***     *** 
+    ****   ****
+    ***********
 
+*/
+void print19(int n){
+     
+int iniSppace=0;
+for(int i=0;i<n;i++){
+    // for the upepr pattern
+    // stars 
+    for(int j=1;j<n-i;j++){
+        cout <<"*";
+    }
+    for(int j=0; j<iniSppace;j++){
+    cout<<" ";
+    }
+
+
+        // stars 
+    for(int j=1;j<n-i;j++)
+    {
+        cout <<"*";
+    }
+    iniSppace+=2;
+    cout<<endl;
+
+    }
+    
+    iniSppace=8;
+    for(int i=1;i<=n;i++){
+    // for the lower pattern
+    // stars 
+    for(int j=1;j<=i;j++){
+        cout <<"*";
+    }
+    for(int j=0; j<iniSppace;j++){
+    cout<<" ";
+    }
+
+
+    // stars 
+    for(int j=1;j<=i;j++){
+        cout <<"*";
+    }
+    iniSppace-=2;
+    cout<<endl;
+
+    }
+    }
 
 
 
 int main(){
-    int t;
-    cin>>t;
-    for(int i=0;i<t;i++){
+    // int t;
+    // cin>>t;
+    // for(int i=0;i<t;i++){
 
-    int n=3;
-    cin>>n;
-    print11(n);
-    print12(n);
-    print13(n);
-    print14(n);
-    print15(n);
-    print16(n);
-    print18(n);
-    }
+    // }
+    int n=5;
+    // cin>>n;
+    // print11(n);
+    // print12(n);
+    // print13(n);
+    // print14(n);
+    // print15(n);
+    // print16(n);
+    // print18(n);
+    print19(n);
 
     return 0;
 }
