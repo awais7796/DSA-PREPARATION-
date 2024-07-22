@@ -199,36 +199,36 @@ cout<<endl;
 */
 void print19(int n){
      
-int iniSppace=0;
+int iniSpace=0;
 for(int i=0;i<n;i++){
     // for the upepr pattern
     // stars 
-    for(int j=1;j<n-i;j++){
+    for(int j=1;j<=n-i;j++){
         cout <<"*";
     }
-    for(int j=0; j<iniSppace;j++){
+    for(int j=0; j<iniSpace;j++){
     cout<<" ";
     }
 
 
         // stars 
-    for(int j=1;j<n-i;j++)
+    for(int j=1;j<=n-i;j++)
     {
         cout <<"*";
     }
-    iniSppace+=2;
+    iniSpace+=2;
     cout<<endl;
 
     }
     
-    iniSppace=8;
+    iniSpace=2*n-1;
     for(int i=1;i<=n;i++){
     // for the lower pattern
     // stars 
     for(int j=1;j<=i;j++){
         cout <<"*";
     }
-    for(int j=0; j<iniSppace;j++){
+    for(int j=1; j<iniSpace;j++){
     cout<<" ";
     }
 
@@ -237,11 +237,54 @@ for(int i=0;i<n;i++){
     for(int j=1;j<=i;j++){
         cout <<"*";
     }
-    iniSppace-=2;
+    iniSpace-=2;
     cout<<endl;
 
     }
     }
+
+/*
+20)
+*       *
+**     ** 
+***   ***
+**** ****
+*********
+**** ****
+***   ***
+**     **
+*       *
+
+*/
+
+void print20(int n){
+  for(int i=0;i<n+2;i++){
+       for(int j=0;j<i;j++){
+           cout<<"* ";
+       }   
+        for(int j=0;j<2*n-1;j++){
+            cout<<" ";
+        }
+       for(int j=i;j<=n;j++){
+           cout<<"* ";
+       }
+
+    cout<<endl;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
 
 
@@ -251,7 +294,7 @@ int main(){
     // for(int i=0;i<t;i++){
 
     // }
-    int n=5;
+    int n=3;
     // cin>>n;
     // print11(n);
     // print12(n);
@@ -260,7 +303,8 @@ int main(){
     // print15(n);
     // print16(n);
     // print18(n);
-    print19(n);
+    // print19(n);
+    print20(n);
 
     return 0;
 }
