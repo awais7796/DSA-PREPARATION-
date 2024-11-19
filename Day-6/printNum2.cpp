@@ -11,7 +11,7 @@ void printName2(int n, int i){
     if(i==n) return ;
     cout<<n<<endl;
     printName2(n-1,i);
-}
+} 
 
 int main (){
     int n;
