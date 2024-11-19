@@ -8,6 +8,11 @@ cnt++;
 Numbr(n);
 
 }
+void printName2(int i, int n){
+    if(i>n) return ;
+    cout<<i<<endl;
+    printName2(i+1,n);
+}
 
 
 int main (){
@@ -15,4 +20,5 @@ int main (){
     cout<<"pls enter the number";
     cin>>n;
     Numbr(n);
+    printName2(1,n);
     }
