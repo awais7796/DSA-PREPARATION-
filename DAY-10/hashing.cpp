@@ -14,8 +14,6 @@ int main (){
     for(int i=0;i<n;i++){
         hash[arr[i]]+=1;
     }
-
-
 // q is the number of quiery
     int q;
     cin>>q;
@@ -26,6 +24,5 @@ int main (){
         cin>>number;
         cout<<hash[number]<<endl;
     }
-
     return 0;
 }
